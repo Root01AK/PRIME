@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="{% static 'images/PrimeBg.png" type="image/x-icon">
+
+  <title>Prime Counsel | Team</title>
+
+  <!-- bootstrap core css --> 
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+
+  
+   <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <div class="hero_bg_box">
+      <div class="img-box">
+        <img src="{% static 'images/hero-bg.jpg' %}" alt="background">
+      </div>
+    </div>
+
+    <header class="header_section">
+      <div class="header_top">
+        <div class="container-fluid">
+          <div class="contact_link-container">
+            <a href="" class="contact_link1">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                Chennai
+              </span>
+            </a>
+            <a href="https://www.truecaller.com/search/in/9788715125" class="contact_link2">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Call : +91 8925863894
+              </span>
+            </a>
+            <a href="" class="contact_link3">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                info@primecounselsolutions.com
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="index.html">
+              <span>
+                <img src="{% static 'images/PrimeBg.png' %}"  alt="background">
+              </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""></span>
+            </button>
+
+            <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <li class="nav-item ">
+                  <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'about' %}"> About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'service' %}"> Services </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'team' %}"> Our Team </a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'contact' %}">Contact us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- about section -->
+
+  <section id="portfolio"  class="section-bg" >
+    <div class="container">
+
+      <header class="section-header">
+        <h3 class="section-title">Our Team</h3>
+      </header>
+
+      <div class="row portfolio-container">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'images/sanjay.png' %}" class="img-fluid" alt="">
+              </figure>
+  
+              <div class="portfolio-info">
+                <h4><a href="{% url 'sanjay' %}">DR. SANJAY THAKRAR</a></h4>
+                <p> Founder & chairman</p>
+              </div>
+            </div>
+          </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="{% static 'images/uma.jpg' %}" class="img-fluid" alt="">
+            </figure>
+            
+            <div class="portfolio-info">
+              <h4><a href="{% url 'uma' %}">UMA JAGADEESAN</a></h4>
+              <p>Head of Operations & Strategy</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+          <div class="portfolio-wrap">
+            <figure>
+              <img src="{% static 'images/udhay.jpeg' %}" class="img-fluid" alt="">
+              
+            </figure>
+
+            <div class="portfolio-info">
+              <h4><a href="{% url 'udhay' %}"> P. UDAYAKUMAR</a></h4>
+              <p>Senior Advisor – New Ventures</p>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'images/ezhil.jpeg' %}" class="img-fluid" alt="">
+              </figure>
+  
+              <div class="portfolio-info">
+                <h4><a href="{% url 'ezhil' %}">EZHIL BOSE</a></h4>
+                <p>Legal Operations Manager</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="{% static 'images/jatin.jpg' %}" class="img-fluid" width="375px" alt="">
+              </figure>
+  
+              <div class="portfolio-info">
+                <h4><a href="{% url 'jatin' %}">JATIN SHARMA</a></h4>
+                <p>Marketing & Sales Head</p> 
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_logo">
+            <a class="navbar-brand" href="{% url 'index' %}">
+              <span>
+                <!--logo-->
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_links">
+            <h5>
+              Prime Counsel
+            </h5>
+            <ul>
+              <li>
+                <a href="" target="_blank">Cookies policy
+                </a>
+              </li>
+              <li>
+                <a href="" target="_blank"> Privacy
+                </a>
+              </li>
+              <li>
+                <a href="">contact us
+                </a>
+              </li>
+              <li>
+                <a href="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_info">
+            <h5>
+              Contact Us
+            </h5>
+          </div>
+          <div class="info_contact">
+            <a href="" class="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                Ganesh Arcades,Door NO:4/13,Fourth Floor,Chandrabagh Avenue,Second Street,Mylapore,Chennai-04
+              </span>
+            </a>
+            <a href="" class="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Call : +91 8925863894
+              </span>
+            </a>
+            <a href="" class="">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                info@primecounselsolutions.com
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_form ">
+            <h5>
+              Newsletter
+            </h5>
+            <form action="#">
+              <input type="email" placeholder="Enter your email">
+              <button>
+                Subscribe
+              </button>
+            </form>
+            <div class="social_box">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+
+
+
+  <!-- footer section -->
+  <footer class="container-fluid footer_section">
+    <p>
+      &copy; <span id="text"></span> 2021.All Rights Reserved.
+    </p>
+  </footer>
+  <!-- footer section -->
+  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+</body>
+
+</html>
